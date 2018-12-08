@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    
+    <!-- <script src="con.js"></script>-->
+   
+</head>
+<body>
+    <section>
+            <form action="/web/Organiser_info.html" method="GET">
+        
+                    <fieldset>
+                            <legend>ORGANISER LOGIN</legend>
+                            <table>
+                                <tr>
+                                    <td><label>Username</label></td>
+                                    <td><input type="email" id="uname1" required placeholder="Enter email id"></td>
+                                </tr>
+                                <tr>
+                                    <td><label>Password</label></td>
+                                    <td><input type="password" id="pass1" required placeholder="Enter password"></td>
+                                </tr>
+                                <tr>
+                                        <td><button type="submit" id="sub1" onclick="check2()">SUBMIT</button> </td>
+                                    </tr>
+                                  
+                            </table>
+                    </fieldset>
+                    
+            
+                </form>  
+    </section>
+    <footer>
+        <a href="Index.html">Home</a>
+    </footer>  
+    <script>
+            function check2(){
+                var oemail = document.getElementById("uname1").value;
+                var opass = document.getElementById("pass1").value;
+            }
+        </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet" href="stylesheet.css">
+   
+    <!-- <script src="con.js"></script>-->
+</head>
+<body>
+    <form action="/web/Participant_info.html" method="GET">
+        
+        <fieldset>
+                <legend>PARTICIPANT LOGIN</legend>
+                <table>
+                    <tr>
+                        <td><label>Username</label></td>
+                        <td><input type="email" id="uname2" required placeholder="Enter email id"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Password</label></td>
+                        <td><input type="password" id="pass2" required placeholder="Enter password"></td>
+                    </tr>
+                    <tr>
+                            <td><button type="submit" id="sub2" onclick="check1()">SUBMIT</button> </td>
+                        </tr>
+                      
+                </table>
+        </fieldset>
+        
+
+    </form>  
+    <footer>
+            <a href="Index.html">Home</a>
+        </footer>   
+        <script>
+            function check1(){
+                var pemail = document.getElementById("uname2").value;
+                var ppass = document.getElementById("pass2").value;
+            }
+        </script>
+</body>
+</html>

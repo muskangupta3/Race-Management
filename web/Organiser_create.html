@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Create Race</title>
+  
+    <!-- <script src="con.js"></script>-->
+</head>
+<body>
+    <form action="/web/Organiser_info.html" method="GET">
+       <fieldset>
+            <table>
+                <legend>Create Race</legend>
+                    <tr>
+                        <td>Name of the Race</td>
+                        <td><input type="text" id="name_race" required> </td>
+                    </tr>
+                    <tr>
+                        <td>Total Prize Pool</td>
+                        <td><input type="number" id="prize" required> </td>
+                    </tr>
+                    <tr>
+                        <td>Date</td>
+                        <td><input type="Date" id="date" required> </td>
+                    </tr>
+                    <tr>
+                        <td>Place</td>
+                        <td><input type="text" id="place" required> </td>
+                    </tr>
+                    <tr>
+                        <td><button type="submit" id="sub3" value="create" onclick="create()">CREATE</button></td>
+                    </tr>
+                </table>
+       </fieldset>
+    </form>
+    <footer>
+            <a href="Organiser_info.html">Back</a>
+        </footer>  
+        <script>
+            function create(){
+                var orace = document.getElementById("name_race").value;
+                var oprize = document.getElementById("prize").value;
+                var odate = document.getElementById("date").value;
+                var oplace = document.getElementById("place").value;
+            }
+        </script>
+</body>
+</html>

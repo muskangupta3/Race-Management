@@ -1,0 +1,27 @@
+a:link {
+    color:black; 
+    background-color: transparent; 
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color:black;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+ 
+  a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+  table th {
+    border: 1px solid black;
+    padding: 5px;  
+}
+table{
+  border-collapse: collapse;
+  width: 100%;
+}

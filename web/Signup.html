@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Signup</title>
+    
+    <!-- <script src="con.js"></script> -->
+  
+</head>
+<body>
+<form>
+<fieldset>
+<table>
+    
+        <legend>SIGNUP</legend>
+    <tr>
+        <td><label>Name</label> </td>
+        <td><input type="text" placeholder="Enter Name" id="name0" required> </td>
+    </tr>
+    <tr>
+        <td><label>Username</label></td>
+        <td><input type="email" id="user" placeholder="Enter Email ID" required ></td>
+    </tr>
+    <tr>
+        <td><label>Password</label></td>
+        <td><input type="password" id="pass0" placeholder="Enter password" required></td>
+    </tr>
+    <tr>
+        <td><label>Category</label></td>
+        <td><input type="radio" value="Organiser" name="category" required>Organiser
+        <input type="radio" value="Participant" name="category">Participant</td>          
+    </tr>
+    <tr>
+        <td><button type="submit" id="sub0" onclick="check()">SUBMIT</button> </td>
+    </tr>
+</table>
+</fieldset>
+</form>
+    <footer>
+            <a href="Index.html">Home</a>
+        </footer> 
+    
+        
+    <script>
+        function check(){
+            var sname = document.getElementById("name0").value;
+         var semail = document.getElementById("user").value;
+         var spass = document.getElementById("pass0").value;
+         var scategory = document.getElementsByName("category").value;
+         console.log(sname);
+        }
+         
+       
+
+
+    </script>
+</body>
+</html>
